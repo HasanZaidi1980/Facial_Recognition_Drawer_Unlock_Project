@@ -7,10 +7,11 @@ An intelligent, two-board security system that utilizes Edge AI facial recogniti
 The system remains in a low-power state until a user interacts with it. Upon a button trigger, the camera unit analyzes the user's face. If the face matches an enrolled "Face ID" stored in the local memory, a wireless command is sent to the receiver board to trigger a relay and retract a 12V solenoid lock.
 
 ### Hardware Components
-Unit A: The Vision Transmitter (Camera Unit)
+
+### Unit A: The Vision Transmitter (Camera Unit)
 Controller: Seeed Studio XIAO ESP32-S3 Sense
 
-### Peripherals: * OV3660 Camera Sensor
+Peripherals: * OV3660 Camera Sensor
 XIAO Expansion Board (Solderless)
 Tactile Buttons (Enroll & Trigger)
 Indicator LED (Status feedback)
