@@ -27,9 +27,16 @@ Flyback Diode (for circuit protection)
 ### AI Models & Software
 This project leverages the ESP-WHO framework to perform facial inference entirely at the "Edge" (locally on the chip), ensuring maximum privacy and speed.
 
-Face Detection: MTCNN (Multi-task Cascaded Convolutional Networks).
-Face Recognition: MobileFaceNet (Optimized CNN for microcontrollers).
-Communication: ESP-NOW (Low-latency, peer-to-peer Wi-Fi protocol).
+Core Models
+Face Detection: MTCNN (Multi-task Cascaded Convolutional Networks) is used to locate facial boundaries and landmarks in real-time.
+Face Recognition: MobileFaceNet is utilized as a lightweight, highly efficient CNN designed to extract unique facial feature vectors on resource-constrained microcontrollers.
+Communication: ESP-NOW provides a low-latency, peer-to-peer Wi-Fi protocol for instant communication between units without a router.
+
+Training Datasets
+The underlying models were developed using the following massive open-source datasets to ensure high accuracy:
+
+WIDER FACE: A benchmark dataset containing over 32,000 images with high variability in face scale, pose, and occlusion, used to train the Detection model.
+MS-Celeb-1M: A large-scale dataset featuring 10 million images of 100,000 celebrities, used to train the Recognition model to distinguish between complex individual identities.
 
 ### Code Files
 ESP32_Sense_Camera.ino
