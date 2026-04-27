@@ -1,4 +1,4 @@
-# Facial_Recognition_Drawer_Unlock_Project
+# Facial Recognition Drawer Unlock Project
 
 ### Biometric Secure Drawer System
 An intelligent, two-board security system that utilizes Edge AI facial recognition to control a physical locking mechanism. This project uses an ESP32-S3 Sense as the vision controller and an ESP32 DevKit as the mechanical actuator, communicating wirelessly via the ESP-NOW protocol.
